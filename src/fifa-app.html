@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="fifa-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class FifaApp extends Polymer.Element {
+      static get is() { return 'fifa-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'fifa-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(FifaApp.is, FifaApp);
+  </script>
+</dom-module>

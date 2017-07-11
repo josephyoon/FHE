@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="player-card">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class PlayerCard extends Polymer.Element {
+      static get is() { return 'player-card'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'player-card'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(PlayerCard.is, PlayerCard);
+  </script>
+</dom-module>
