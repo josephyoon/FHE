@@ -1,0 +1,28 @@
+/* Card background */
+.card-season {width: 500px; height: 700px; background: url(../images/card-elements.png) 0px -128px; display: block;}
+.card-hbest {width: 500px; height: 700px; background: url(../images/card-elements.png) -500px -128px; display: block;}
+.card-hlegend {width: 500px; height: 700px; background: url(../images/card-elements.png) -1000px -128px; display: block;}
+.card-fclub {width: 500px; height: 700px; background: url(../images/card-elements.png) 0px -828px; display: block;}
+.card-god {width: 500px; height: 700px; background: url(../images/card-elements.png) -500px -828px; display: block;}
+
+/* Season */
+.season-hbest {width: 64px; height: 64px; background: url(../images/card-elements.png) 0px -64px; display: block;}
+.season-hlegend {width: 64px; height: 64px; background: url(../images/card-elements.png) -64px -64px; display: block;}
+.season-fclub {width: 64px; height: 64px; background: url(../images/card-elements.png) -128px -64px; display: block;}
+.season-god {width: 64px; height: 64px; background: url(../images/card-elements.png) -192px -64px; display: block;}
+.season-16 {width: 64px; height: 64px; background: url(../images/card-elements.png) -256px -64px; display: block;}
+.season-17 {width: 64px; height: 64px; background: url(../images/card-elements.png) -320px -64px; display: block;}
+.season-18 {width: 64px; height: 64px; background: url(../images/card-elements.png) -384px -64px; display: block;}
+
+/* Rank */
+.rank-0 {width: 100px; height: 64px; background: url(../images/card-elements.png) 0px 0px; display: block;}
+.rank-1 {width: 100px; height: 64px; background: url(../images/card-elements.png) -100px 0px; display: block;}
+.rank-2 {width: 100px; height: 64px; background: url(../images/card-elements.png) -200px 0px; display: block;}
+.rank-3 {width: 100px; height: 64px; background: url(../images/card-elements.png) -300px 0px; display: block;}
+.rank-4 {width: 100px; height: 64px; background: url(../images/card-elements.png) -400px 0px; display: block;}
+.rank-5 {width: 100px; height: 64px; background: url(../images/card-elements.png) -500px 0px; display: block;}
+.rank-6 {width: 100px; height: 64px; background: url(../images/card-elements.png) -600px 0px; display: block;}
+.rank-7 {width: 100px; height: 64px; background: url(../images/card-elements.png) -700px 0px; display: block;}
+.rank-8 {width: 100px; height: 64px; background: url(../images/card-elements.png) -800px 0px; display: block;}
+.rank-9 {width: 100px; height: 64px; background: url(../images/card-elements.png) -900px 0px; display: block;}
+.rank-10 {width: 100px; height: 64px; background: url(../images/card-elements.png) -1000px 0px; display: block;}
