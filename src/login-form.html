@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="login-form">
+    <template>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/landing.css" />
+        <link rel="stylesheet" href="../fonts/EASansCurves-Regular/fonts.css" type="text/css" charset="utf-8" />
+
+        <div class="login-field">
+            <h1 class="login-title">LOGIN</h1>
+            <form>
+                <span class="login-validation">로그인 정보가 부정확합니다.</span>
+                <input class="login-input" type="text" name="student-no" placeholder="학번" maxlength="4"><br>
+                <input class="login-input" type="password" name="password" placeholder="비밀번호"><br>
+                <button type="submit" class="login-submit">로그인 >></button>
+            </form>
+            <a href="" class="login-create">계정 만들기</a>
+            <span class="login-create">&nbsp;|&nbsp;</span>
+            <a href="" class="login-create">비밀번호 찾기</a>
+        </div>
+    </template>
+
+    <script>
+    class LoginForm extends Polymer.Element {
+        static get is() { return 'login-form'; }
+    }
+
+    window.customElements.define(LoginForm.is, LoginForm);
+  </script>
+</dom-module>

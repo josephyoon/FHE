@@ -1,28 +1,114 @@
 /* Card background */
-.card-season {width: 500px; height: 700px; background: url(../images/card-elements.png) 0px -128px; display: block;}
-.card-hbest {width: 500px; height: 700px; background: url(../images/card-elements.png) -500px -128px; display: block;}
-.card-hlegend {width: 500px; height: 700px; background: url(../images/card-elements.png) -1000px -128px; display: block;}
-.card-fclub {width: 500px; height: 700px; background: url(../images/card-elements.png) 0px -828px; display: block;}
-.card-god {width: 500px; height: 700px; background: url(../images/card-elements.png) -500px -828px; display: block;}
+.card-season {width: 500px; height: 700px; background: url(../images/card-elements.png) 0px -128px;}
+.card-hbest {width: 500px; height: 700px; background: url(../images/card-elements.png) -500px -128px;}
+.card-hlegend {width: 500px; height: 700px; background: url(../images/card-elements.png) -1000px -128px;}
+.card-fclub {width: 500px; height: 700px; background: url(../images/card-elements.png) 0px -828px;}
+.card-god {width: 500px; height: 700px; background: url(../images/card-elements.png) -500px -828px;}
 
 /* Season */
-.season-hbest {width: 64px; height: 64px; background: url(../images/card-elements.png) 0px -64px; display: block;}
-.season-hlegend {width: 64px; height: 64px; background: url(../images/card-elements.png) -64px -64px; display: block;}
-.season-fclub {width: 64px; height: 64px; background: url(../images/card-elements.png) -128px -64px; display: block;}
-.season-god {width: 64px; height: 64px; background: url(../images/card-elements.png) -192px -64px; display: block;}
-.season-16 {width: 64px; height: 64px; background: url(../images/card-elements.png) -256px -64px; display: block;}
-.season-17 {width: 64px; height: 64px; background: url(../images/card-elements.png) -320px -64px; display: block;}
-.season-18 {width: 64px; height: 64px; background: url(../images/card-elements.png) -384px -64px; display: block;}
+.season-hbest {width: 64px; height: 64px; background: url(../images/card-elements.png) 0px -64px;}
+.season-hlegend {width: 64px; height: 64px; background: url(../images/card-elements.png) -64px -64px;}
+.season-fclub {width: 64px; height: 64px; background: url(../images/card-elements.png) -128px -64px;}
+.season-god {width: 64px; height: 64px; background: url(../images/card-elements.png) -192px -64px;}
+.season-16 {width: 64px; height: 64px; background: url(../images/card-elements.png) -256px -64px;}
+.season-17 {width: 64px; height: 64px; background: url(../images/card-elements.png) -320px -64px;}
+.season-18 {width: 64px; height: 64px; background: url(../images/card-elements.png) -384px -64px;}
 
 /* Rank */
-.rank-0 {width: 100px; height: 64px; background: url(../images/card-elements.png) 0px 0px; display: block;}
-.rank-1 {width: 100px; height: 64px; background: url(../images/card-elements.png) -100px 0px; display: block;}
-.rank-2 {width: 100px; height: 64px; background: url(../images/card-elements.png) -200px 0px; display: block;}
-.rank-3 {width: 100px; height: 64px; background: url(../images/card-elements.png) -300px 0px; display: block;}
-.rank-4 {width: 100px; height: 64px; background: url(../images/card-elements.png) -400px 0px; display: block;}
-.rank-5 {width: 100px; height: 64px; background: url(../images/card-elements.png) -500px 0px; display: block;}
-.rank-6 {width: 100px; height: 64px; background: url(../images/card-elements.png) -600px 0px; display: block;}
-.rank-7 {width: 100px; height: 64px; background: url(../images/card-elements.png) -700px 0px; display: block;}
-.rank-8 {width: 100px; height: 64px; background: url(../images/card-elements.png) -800px 0px; display: block;}
-.rank-9 {width: 100px; height: 64px; background: url(../images/card-elements.png) -900px 0px; display: block;}
-.rank-10 {width: 100px; height: 64px; background: url(../images/card-elements.png) -1000px 0px; display: block;}
+.rank-0 {width: 100px; height: 64px; background: url(../images/card-elements.png) 0px 0px;}
+.rank-1 {width: 100px; height: 64px; background: url(../images/card-elements.png) -100px 0px;}
+.rank-2 {width: 100px; height: 64px; background: url(../images/card-elements.png) -200px 0px;}
+.rank-3 {width: 100px; height: 64px; background: url(../images/card-elements.png) -300px 0px;}
+.rank-4 {width: 100px; height: 64px; background: url(../images/card-elements.png) -400px 0px;}
+.rank-5 {width: 100px; height: 64px; background: url(../images/card-elements.png) -500px 0px;}
+.rank-6 {width: 100px; height: 64px; background: url(../images/card-elements.png) -600px 0px;}
+.rank-7 {width: 100px; height: 64px; background: url(../images/card-elements.png) -700px 0px;}
+.rank-8 {width: 100px; height: 64px; background: url(../images/card-elements.png) -800px 0px;}
+.rank-9 {width: 100px; height: 64px; background: url(../images/card-elements.png) -900px 0px;}
+.rank-10 {width: 100px; height: 64px; background: url(../images/card-elements.png) -1000px 0px;}
+
+/* Card layout related styles */
+.card {display: block;}
+.card-player {
+    width: 500px;
+    height: 400px;
+    margin-top: 130px;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+.card-rating {
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 5em;
+    width: 180px;
+    height: 70px;
+    margin-top: -430px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+.card-position {
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 3em;
+    width: 180px;
+    height: 50px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+.card-classroom {
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 3em;
+    width: 180px;
+    height: 50px;
+    margin-top: 50px;
+    padding-left: 50px;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+.card-dormroom {
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 3em;
+    width: 180px;
+    height: 50px;
+    padding-left: 50px;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+.card-type {
+    display: block;
+    position: relative;
+    margin-top: 66px;
+    margin-left: 26px;
+    z-index: 1;
+}
+.card-rank {
+    display: block;
+    position: relative;
+    margin-top: -64px;
+    margin-left: 372px;
+    z-index: 1;
+}
+.card-name {
+    font-family: Sans-Serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 4em;
+    width: 300px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 60px;
+    display: block;
+}

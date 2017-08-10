@@ -1,0 +1,5 @@
+/* Landing page background */
+.model {width: 2880px; height: 1800px; background: url(../images/landing-sprite.png) 0px 0px;}
+.logo-vertical {width: 782px; height: 1146px; background: url(../images/landing-sprite.png) 0px -1800px;}
+.logo-horizontal {width: 1596px; height: 400px; background: url(../images/landing-sprite.png) -792px -1800px;}
+.login-field {width: 480px; height: 480px; background: url(../images/landing-sprite.png) -794px -2226px;}

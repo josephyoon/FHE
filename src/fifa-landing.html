@@ -1,0 +1,40 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="fifa-landing">
+    <template>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/landing.css" />
+        <link rel="stylesheet" href="../css/loading.css" />
+        <link rel="stylesheet" href="../fonts/EASansCurves-Regular/fonts.css" type="text/css" charset="utf-8" />
+
+        <div class="landing-bg">
+            <div class="model">
+                <div class="logo-vertical landing-logo">
+                    <div class="lds-css ng-scope loading" >
+                        <div style="width:100%;height:100%" class="lds-dual-ring">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script>
+
+        class FifaLanding extends Polymer.Element {
+            static get is() { return 'fifa-landing'; }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'fifa-landing'
+                    }
+                };
+            }
+        }
+
+        window.customElements.define(FifaLanding.is, FifaLanding);
+  </script>
+</dom-module>

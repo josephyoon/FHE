@@ -1,214 +1,96 @@
-.scale-50 {
+.zoom-25 {
+    zoom: 0.25;
+    -moz-transform: scale(0.25);
+}
+.zoom-50 {
     zoom: 0.5;
     -moz-transform: scale(0.5);
 }
-
-.scale-75 {
+.zoom-75 {
     zoom: 0.75;
     -moz-transform: scale(0.75);
 }
 
-.cover {
-    width: 1440px;
-    height: 900px;
-    background-image: url(../images/fifa-cover.png);
-    background-size: cover;
+/* Landing page */
+.scale-to-screen {
+    /*zoom: 0.4;
+    -moz-transform: scale(0.4);*/
+}
+.landing-bg {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    width: 2880px;
+    height: 1800px;
+    background: linear-gradient(to bottom, #220816, #420A0A);
+}
+.landing-login {
+    display: block;
+    margin-top: -1140px;
+    margin-left: 1200px;
+}
+.landing-logo {
+    display: inline-block;
+    margin-left: 240px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+}
+.loading {
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+    margin-left: 380px;
+    margin-top: 1400px;
+    display: inline-block;
 }
 
-.overall-white {
-    color: #ffffff;
-    font-size: 2.2em;
-    font-family:'Conv_EASansCurves-Regular',Sans-Serif;
-    text-align: center;
-    width: 60px;
-    padding-top: 80px;
-    padding-left: 40px;
-}
-
-.position-white {
-    color: #ffffff;
-    font-size: 1.5em;
-    font-family:'Conv_EASansCurves-Regular',Sans-Serif;
-    text-align: center;
-    width: 60px;
-    margin-top: -4px;
-    padding-left: 40px;
-}
-
-.class-white {
-    color: #ffffff;
-    font-size: 1.5em;
-    font-family:'Conv_EASansCurves-Regular',Sans-Serif;
-    text-align: left;
-    padding-top: 26px;
-    padding-left: 50px;
-}
-
-.room-white {
-    color: #ffffff;
-    font-size: 1.5em;
-    font-family:'Conv_EASansCurves-Regular',Sans-Serif;
-    text-align: left;
-    padding-left: 50px;
-}
-
-.overall-black {
-    color: #000000;
-    font-size: 2.2em;
-    font-family:'Conv_EASansCurves-Regular',Sans-Serif;
-    text-align: center;
-    width: 60px;
-    padding-top: 80px;
-    padding-left: 40px;
-}
-
-.position-black {
-    color: #000000;
-    font-size: 1.5em;
-    font-family:'Conv_EASansCurves-Regular',Sans-Serif;
-    text-align: center;
-    width: 60px;
-    margin-top: -4px;
-    padding-left: 40px;
-}
-
-.class-black {
-    color: #000000;
-    font-size: 1.5em;
-    font-family:'Conv_EASansCurves-Regular',Sans-Serif;
-    text-align: left;
-    padding-top: 26px;
-    padding-left: 50px;
-}
-
-.room-black {
-    color: #000000;
-    font-size: 1.5em;
-    font-family:'Conv_EASansCurves-Regular',Sans-Serif;
-    text-align: left;
-    padding-left: 50px;
-}
-
-.face-container {
-    width: 230px;
-    height: 230px;
-    margin-top: -354px;
-    margin-left: 45px;
-}
-
-.name-white {
-    color: #ffffff;
-    font-size: 2.5em;
-    font-family: sans-serif;
-    width: 300px;
-    padding-top: 40px;
+/* Login field */
+.login-field {
+    display: block;
     text-align: center;
 }
-
-.name-black {
-    color: #000000;
-    font-size: 2.5em;
-    font-family: sans-serif;
-    width: 300px;
-    padding-top: 40px;
+.login-title {
+    color: #FFFFFF;
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
+    font-size: 4em;
+    font-weight: 300;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+.login-validation {
+    color: #FF0000;
+    font-family: Sans-Serif;
+    font-size: 1em;
+    visibility: hidden;
+}
+.login-input {
     text-align: center;
+    width: 360px;
+    height: 60px;
+    margin-top: 24px;
+    border-radius: 12px;
+    border: none;
+    font-size: 2em;
+    display: inline-block;
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
 }
-
-.rank-0 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-0.png);
-    background-size: cover;
+.login-submit {
+    background: #FECE21;
+    font-size: 2em;
+    width: 360px;
+    height: 60px;
+    margin-top: 24px;
+    border-radius: 12px;
+    border: none;
+    font-family: Sans-Serif;
+    text-decoration: none;
+    display: inline-block;
 }
-
-.rank-1 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-1.png);
-    background-size: cover;
-}
-
-.rank-2 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-2.png);
-    background-size: cover;
-}
-
-.rank-3 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-3.png);
-    background-size: cover;
-}
-
-.rank-4 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-4.png);
-    background-size: cover;
-}
-
-.rank-5 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-5.png);
-    background-size: cover;
-}
-
-.rank-6 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-6.png);
-    background-size: cover;
-}
-
-.rank-7 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-7.png);
-    background-size: cover;
-}
-
-.rank-8 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-8.png);
-    background-size: cover;
-}
-
-.rank-9 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-9.png);
-    background-size: cover;
-}
-
-.rank-10 {
-    width: 50px;
-    height: 32px;
-    margin-top: -32px;
-    margin-left: 208px;
-    background-image: url(../images/card-elements/rank-10.png);
-    background-size: cover;
+.login-create {
+    font-size: 0.8em;
+    color: #FFFFFF;
+    font-family: Sans-Serif;
+    margin-top: 24px;
+    display: inline-block;
 }
