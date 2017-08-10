@@ -12,13 +12,11 @@
 }
 
 /* Landing page */
-.scale-to-screen {
-    /*zoom: 0.4;
-    -moz-transform: scale(0.4);*/
-}
-.landing-bg {
+.no-margin {
     position: absolute;
     top: 0; bottom: 0; right: 0; left: 0;
+}
+.landing-bg {
     width: 2880px;
     height: 1800px;
     background: linear-gradient(to bottom, #220816, #420A0A);

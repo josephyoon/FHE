@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="fonts/EASansCurves-Regular/fonts.css" type="text/css" charset="utf-8" />
 </head>
 <body>
-    <div class="scale-to-screen">
+    <div id="fifa-viewport" class="no-margin">
         <fifa-landing></fifa-landing>
         <login-form class="landing-login"></login-form>
     </div>
@@ -39,5 +39,14 @@
                  dormroom = "C 302"
                  rank = "5"
                  playername = "김성호"></player-card>-->
+
+    <script src="script/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        var width = 2880;
+        var resizedHeight = $(window).width();
+        var scaleFactor = resizedHeight / width;
+
+        document.getElementById('fifa-viewport').setAttribute("style", "zoom:" + scaleFactor + "; -moz-transform: scale("+ scaleFactor +");");
+    </script>
 </body>
 </html>
