@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>FIFA_HE</title>
+    <meta name="description" content="FIFA_HE description">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
+    <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <link rel="import" href="/src/fifa-landing.html">
+    <link rel="import" href="/src/login-form.html">
+    <link rel="import" href="/src/player-card.html">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sprites.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/players.css" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="fonts/EASansCurves-Regular/fonts.css" type="text/css" charset="utf-8" />
+</head>
+<body>
+    <div id="fifa-viewport" class="no-margin">
+    </div>
+
+    <script src="script/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        var width = 2880;
+        var resizedHeight = $(window).width();
+        var scaleFactor;
+
+        if (resizedHeight / width >= 0.3) {
+            scaleFactor = resizedHeight / width;
+        } else scaleFactor = 0.3;
+
+        document.getElementById('fifa-viewport').setAttribute("style", "zoom:" + scaleFactor +
+            "; -moz-transform: scale("+ scaleFactor +");");
+    </script>
+</body>
+</html>

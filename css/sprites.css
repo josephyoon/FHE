@@ -1,0 +1,16 @@
+/* Landing page background */
+.model {width: 2880px; height: 1800px; background: url(../images/sprite.png) 0px 0px;}
+.logo-vertical {width: 782px; height: 1146px; background: url(../images/sprite.png) 0px -1800px;}
+.logo-horizontal {width: 1596px; height: 400px; background: url(../images/sprite.png) -792px -1800px;}
+.login-field {width: 480px; height: 480px; background: url(../images/sprite.png) -794px -2226px;}
+
+/* Main screen */
+.ep {width: 64px; height: 64px; background: url(../images/sprite.png) -1288px -2228px;}
+.matthew {width: 64px; height: 64px; background: url(../images/sprite.png) -1288px -2292px;}
+.locked {width: 632px; height: 632px; background: url(../images/sprite.png) -1434px -2224px;}
+.locked-large {width: 1312px; height: 632px; background: url(../images/sprite.png) -1424px -4900px;}
+.my-squad {width: 1424px; height: 1312px; background: url(../images/sprite.png) 0px -4900px;}
+.upgrade {width: 632px; height: 632px; background: url(../images/sprite.png) -2066px -2224px;}
+.user-bg {width: 1196px; height: 200px; background: url(../images/sprite.png) -1424px -5532px;}
+.logo-bg {width: 600px; height: 200px; background: url(../images/sprite.png) -1424px -5732px;}
+.stadium {width: 2880px; height: 1800px; background: url(../images/sprite.png) 0px -3100px;}

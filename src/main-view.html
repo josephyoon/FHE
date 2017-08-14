@@ -1,0 +1,113 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="main-view">
+    <template>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/sprites.css" />
+        <link rel="stylesheet" href="../css/loading.css" />
+        <link rel="stylesheet" href="../fonts/EASansCurves-Regular/fonts.css" type="text/css" charset="utf-8" />
+
+        <div class="stadium">
+            <div class="user-bg">
+                <div class="profile-picture zoom-50"></div>
+                <div class="user-info">
+                    <span class="username">{{username}}</span><br>
+                    <span class="school-id"><{{year}}> {{schoolid}}</span>
+                </div>
+                <div class="user-money">
+                    <div class="ep">
+                        <span class="ep-amount">{{ep}}</span>
+                    </div>
+                    <div class="matthew">
+                        <span class="matthew-amount">{{matthew}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-bg">
+                <div class="logo-horizontal zoom-25"></div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="menu-bar">
+                <button class="menu-item tablink active" onclick="openTab(event,'Main')">MAIN</button>
+                <button class="menu-item tablink" onclick="openTab(event,'Squad')">MY SQUAD</button>
+                <button class="menu-item tablink disabled">MY ITEMS</button>
+                <button class="menu-item tablink disabled"">TRANSFER</button>
+                <button class="menu-item tablink disabled">STORE</button>
+                <div class="dropdown">
+                    <button class="menu-item dropbtn">MENU</button>
+                    <div class="menu-dropdown">
+                        <a href="">ACCOUNT</a>
+                        <a href="">HELP</a>
+                        <a href="">LOG OUT</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Main" class="tab-item tab">
+                a
+            </div>
+
+            <div id="Squad" class="tab-item tab" style="display:none">
+                b
+            </div>
+
+            <!--<div id="Items" class="tab-item tab" style="display:none">
+            </div>
+
+            <div id="Transfer" class="tab-item tab" style="display:none">
+            </div>
+
+            <div id="Store" class="tab-item tab" style="display: none">
+            </div>-->
+        </div>
+    </template>
+
+    <script>
+
+        class MainView extends Polymer.Element {
+            static get is() { return 'main-view'; }
+            constructor() {
+                super();
+                this.username = "윤석상";
+                this.schoolid = "2323";
+                this.year = "2017";
+                this.ep = numberFormat("1000000000", ",");
+                this.matthew = numberFormat("0", ",");
+            }
+
+            connectedCallback() {
+                super.connectedCallback();
+            }
+        }
+
+        function numberFormat(_number, _sep) {
+            if (_number == "0") {
+                return _number;
+            } else {
+                _number = typeof _number != "undefined" && _number > 0 ? _number : "";
+                _number = _number.replace(new RegExp("^(\\d{" + (_number.length % 3 ? _number.length % 3 : 0) + "})(\\d{3})", "g"), "$1 $2").replace(/(\d{3})+?/gi, "$1 ").trim();
+                if (typeof _sep != "undefined" && _sep != " ") {
+                    _number = _number.replace(/\s/g, _sep);
+                }
+                return _number;
+            }
+        }
+
+        function openTab(evt, tabName) {
+            var i, x, tablinks;
+            x = this.shadowRoot.querySelectorAll(".tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = this.shadowRoot.querySelectorAll(".tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            this.shadowRoot.querySelector("#" + tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        window.customElements.define(MainView.is, MainView);
+  </script>
+</dom-module>
