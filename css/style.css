@@ -11,6 +11,145 @@
     -moz-transform: scale(0.75);
 }
 
+/* Main View */
+.user-bg {
+    display: inline-block;
+    margin-left: 48px;
+    margin-top: 52px;
+}
+.logo-bg {
+    display: block;
+    margin-top: -200px;
+    margin-left: 2232px;
+}
+.logo-horizontal {
+    display: inline-block;
+    margin-top: 200px;
+    margin-left: 400px;
+}
+.profile-picture {
+    width: 400px;
+    height: 400px;
+    background: url("../images/players/placeholder.png") -100px 0px;
+    background-size: cover;
+    display: block;
+}
+.user-info {
+    width: 300px;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 200px;
+    display: block;
+}
+.username {
+    font-family: Sans-Serif;
+    font-weight: 700;
+    font-size: 4em;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.school-id {
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
+    font-weight: 300;
+    font-size: 3em;
+    margin-top: 15px;
+    margin-left: 30px;
+    display: block;
+}
+.user-money {
+    width: 600px;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 500px;
+    display: block;
+}
+.ep {
+    margin-top: 30px;
+    display: inline-block;
+}
+.matthew {
+    margin-top: 10px;
+    display: block;
+}
+.ep-amount, .matthew-amount {
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
+    font-weight: 300;
+    font-size: 3em;
+    margin-top: 12px;
+    margin-left: 80px;
+    display: inline-block;
+}
+
+/* Navigation */
+.menu-bar {
+    margin-top: 48px;
+    margin-left: 48px;
+    width: 2784px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-item {
+    display: inline-block;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #333333;
+    border: solid 4px #fece21;
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
+    font-weight: 300;
+    font-size: 5em;
+    color: #fece21;
+    text-align: center;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background-color: #cc3333 !important;
+}
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu-dropdown a {
+    font-family: 'Conv_EASansCurves-Regular', Sans-Serif;
+    font-weight: 300;
+    font-size: 4em;
+    border-bottom: solid 4px #fece21;
+    color: #fece21;
+    padding-top: 18px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+.menu-dropdown a:hover {background-color: #000000}
+.dropdown:hover .menu-dropdown {
+    display: block;
+}
+.active {
+    background-color: #fece21 !important;
+    border: solid 4px #ffffff !important;
+    color: #000000 !important;
+}
+.disabled {
+    background-color: #dddddd !important;
+    border: solid 4px #ffffff !important;
+    color: #ffffff !important;
+    cursor: default !important;
+}
+.tab-item {
+
+}
+
 /* Landing page */
 .no-margin {
     position: absolute;
@@ -38,7 +177,7 @@
     zoom: 0.8;
     -moz-transform: scale(0.8);
     margin-left: 380px;
-    margin-top: 1400px;
+    margin-top: 1480px;
     display: inline-block;
 }
 
